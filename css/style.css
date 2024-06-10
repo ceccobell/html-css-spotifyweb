@@ -44,6 +44,7 @@ header {
 .row {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .col-100 {
@@ -62,6 +63,10 @@ a {
     text-decoration: none;
 }
 
+.sidebar-footer {
+    position: fixed;
+    bottom: 150px;
+}
 
 /* UTILITY */ 
 .label {
@@ -77,6 +82,10 @@ a {
 
 .margin-20 {
     margin: 20px 0px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
 }
 
 .margin-40 {
