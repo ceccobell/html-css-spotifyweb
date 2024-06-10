@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-section {
+    max-width: 100%;
+    height: calc(100vh - 150px);
+    background-color: red;
+}
+
+.bottom-section {
+    max-width: 100%;
+    height: 150px;
+    background-color: blue;
+}
