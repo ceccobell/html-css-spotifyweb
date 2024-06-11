@@ -254,6 +254,12 @@ main li {
     cursor: pointer;
 }
 
+.hover-scale:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
 /* MEDIA */ 
 
 @media screen and (min-width: 576px) {
