@@ -62,6 +62,9 @@ header {
 
 .content {
     padding: 10px 10px 0px 10px;
+}
+
+.sidebar .content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,8 +82,6 @@ ul {
 
 .col-50 {
     width: calc(50% - 10px);
-    height: 100px;
-    background-color: red;
     margin: 5px;
 }
 
@@ -100,6 +101,22 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.671);
+}
+
+main li {
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+}
+
+.main-corp img {
+    width: 100%;
+    height: auto;
 }
 
 /* UTILITY */ 
@@ -161,11 +178,10 @@ a {
     padding: 1px;
 }
 
-hr {
-    width: 100%;
-    border: none;
-    border-top: 1px solid rgba(255, 255, 255, 0.671);
+.text-center {
+    text-align: center;
 }
+
 /* MEDIA */ 
 
 @media screen and (min-width: 576px) {
@@ -198,7 +214,7 @@ hr {
         margin-right: 10px;
     }
 
-    .content {
+    .sidebar .content {
         padding: 10px 10px 0px 10px;
         display: flex;
         align-items: start;
@@ -209,13 +225,11 @@ hr {
 @media screen and (min-width: 768px) {
     .col-25 {
         width: calc(25% - 10px);
-        background-color: red;
     }
 }
 
 @media screen and (min-width: 991px) {
     .col-16 {
         width: calc(100% / 6 - 10px);
-        background-color: red;
     }
 }
