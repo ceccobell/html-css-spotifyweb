@@ -249,6 +249,11 @@ main li {
     margin: 2px;
 }
 
+.hover-white:hover {
+    color: white;
+    cursor: pointer;
+}
+
 /* MEDIA */ 
 
 @media screen and (min-width: 576px) {
