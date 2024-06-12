@@ -14,10 +14,13 @@
 }
 
 .bottom-section {
-    max-width: 100%;
+    width: 100%;
     height: 75px;
     background-color: #282828;
     display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
 }
 
 .sidebar {
@@ -200,6 +203,10 @@ main li {
     color: black;
 }
 
+.bg-black {
+    background-color: black;
+}
+
 
 .text-center {
     text-align: center;
@@ -249,6 +256,11 @@ main li {
     margin: 2px;
 }
 
+.hover-white:hover i, .hover-white:hover span  {
+    color: white;
+    cursor: pointer;
+}
+
 .hover-white:hover {
     color: white;
     cursor: pointer;
@@ -256,6 +268,37 @@ main li {
 
 .hover-scale:hover {
     transform: scale(1.2);
+    cursor: pointer;
+}
+
+.col-33 a:hover {
+    text-decoration: underline;
+}
+
+.hover-img:hover {
+    cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    font-size: 70px;
+    display: none;
+}
+
+.image-container:hover img {
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.image-container:hover .play-icon {
+    display: block;
     cursor: pointer;
 }
 
